@@ -15,6 +15,7 @@ import Mission from '../src/assets/Ourmission.avif'
 
 import 'aos/dist/aos.css'; // AOS styles
 import AOS from 'aos'
+import { Navbar } from './components/Navbar';
 
 
 
@@ -29,10 +30,10 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
 
-  const openModal = (content) => {
-    setModalContent(content);
-    setIsModalOpen(true);
-  };
+  // const openModal = (content) => {
+  //   setModalContent(content);
+  //   setIsModalOpen(true);
+  // };
 
   const closeModal = () => {
     setModalContent('');
@@ -74,8 +75,8 @@ function App() {
   
 
   return (
-    <main>
-   
+    <main className="bg-green-950">
+      <Navbar />
 
     {/* hero section  */}
       <Slider {...heroSettings} className="heroSlide">
@@ -83,10 +84,10 @@ function App() {
           <div key={i} 
           >
             <section
-              className="hero lg:h-[120vh] h-screen text-white flex pt-[5em]  justify-center lg:pl-11 pl-4"
+              className="hero lg:h-[210] h-screen text-white flex pt-[5em]  justify-center lg:pl-11 pl-4"
               id="home"
               style={{
-                backgroundImage: `linear-gradient( rgb(5, 46, 22 , 0.75),  rgb(5, 46, 22 , 1) ), url(${slide.img})`,
+                backgroundImage: `linear-gradient( rgb(5, 46, 22 , 0.25),  rgb(5, 46, 22 , 1) ), url(${slide.img})`,
               }}
             >
               <div className="lg:mt-6 mt-[5em] pr-4 mx-auto w-[60%]">
@@ -95,13 +96,13 @@ function App() {
                   Welcome to Green passion Believer Fellowship
                   </h2>
                   <h6
-                    className="text-2xl lg:text-4xl font-[400] lg:font-[400] uppercase leading-10 lg:leading-[50px] text-white"
+                    className="text-2xl lg:text-2xl font-[400] lg:font-[400]  leading-10 lg:leading-[50px] text-white"
                     data-aos="fade-up"
                   >
-                    ...United in Faith, Strengthened in Christ
+                    Our Goal is to see Jesus REVEALED, GLORIFIED AND HIS BODY EDIFIED
                   </h6>
-                  <button className="text-black my-10 bg-white" data-aos="zoom-in">
-                   <a href="https://bit.ly/KelisConRequestform"   target='_blank' className='text-green'>Join Our WhatApp</a>
+                  <button className="text-white my-10 bg-[#F7931E]" data-aos="zoom-in">
+                   <a href="https://chat.whatsapp.com/LnxXg88WjWmJB9dXfmu8nS"   target='_blank' className='text-white'>Join Our WhatApp</a>
                   </button>
                 </div>
               </div>
@@ -119,11 +120,11 @@ function App() {
       </div>
       <div className="textArea flex items-center justify-self-start pl-4">
         <div className='lg:px-1 lg:pr-3'>
-          <h2 className='text-2xl lg:text-4xl font-[400] lg:font-[800] text-left lg:pl-6 py-4 text-green uppercase pt-[1em]' data-aos="fade-up">About GPBF</h2>
-          <p className='text-left lg:py-3 mb-4 lg:px-6 py-4 font-[600] text-2xl' data-aos="zoom-in">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloribus labore asperiores sequi ducimus non quod sed, nulla provident perspiciatis aut ut accusantium sint maxime quidem tempora eaque fugiat, commodi dignissimos? Amet incidunt ut architecto officia illo corporis. Quibusdam quod animi unde porro nostrum sint? 
+          <h2 className='text-2xl lg:text-4xl font-[400] lg:font-[800] text-left lg:pl-6 py-4 text-white uppercase pt-[1em]' data-aos="fade-up">About GPBF</h2>
+          <p className='text-left lg:py-3 mb-4 lg:px-6 py-4 font-[600] text-2xl text-white' data-aos="zoom-in">
+        GREEN PASTURES  BELIEVERS FELLOWSHIP is a family. A family who come to God not just for what He has to offer but to Know Him Experientially. To love Him Unconditionally. This family is created to help build everyone in the knowledge of God for themselves by walking in the leading of the Holy Ghost
           </p>
-          <button className='lg:w-[30%] lg:ml-6 bg-green text-white'><a href="#mission" className='text-white'>Learn More</a></button>
+          <button className='lg:w-[30%] lg:ml-6 bg-[#F7931E] text-white'><a href="#mission" className='text-white'>Learn More</a></button>
         </div>
       </div>
     </section>
@@ -134,9 +135,9 @@ function App() {
       <div className='textArea flex justify-center lg:px-3 p-4 leading-7 flex-col pl-[40px] '>
         <h2 className='lg:text-4xl text-3xl lg:font-[800] font-[300] text-left lg:px-6 text-white uppercase '> Our Vision</h2>
         <p className='text-left py-6 lg:px-2 px-1 text-gray-300 lg:text-[20px] font-[500]' data-aos="fade-up" data-aos-delay="400">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusamus cumque dignissimos aut magni qui saepe dolorem consequuntur illum minima?
+        To helps raise men and women who will grow in stature and capacity to stand in the gap for their generation. To raise men and women who will not just grow spiritually but physically, financially and other sphere of life too numerous to mention. To help raise men and women who will not just be called Christians but they will be witnesses to God in all areas of their lives. Men and women that will carry the burden of God and deliver it safely no matter what.
         </p>
-        <button className='w-[40%] lg:ml-6 bg-white'><a href="#service" className='text-green font-[600]' data-aos="zoom-out">Learn More</a></button>
+        <button className='w-[40%] lg:ml-6 bg-[#F7931E]'><a href="#service" className='text-white font-[600]' data-aos="zoom-out">Learn More</a></button>
       </div>
       <div className="imgContainer w-[90%] order-[first] relative">
         <img src={Mission} className='w-full hidden lg:block absolute right-[-6.75em] top-[-9em]' alt="" />
@@ -146,71 +147,31 @@ function App() {
 
     {/* misson section  */}
     <section className='lg:h-[100vh] lg:mt-[11em] flex flex-col justify-center items-center mt-[3em]'>
-      <h2 className='lg:text-4xl text-3xl lg:font-[800] font-[300] text-left lg:px-6  uppercase my-5'>Our Mission</h2>
-      <p>Loving radically, living generously</p>
+      <h2 className='lg:text-4xl text-3xl lg:font-[800] font-[300] text-white text-left lg:px-6  uppercase my-5'>Our Mission</h2>
+      <p className='text-white'>Our Goal is to see Jesus REVEALED, GLORIFIED AND HIS BODY EDIFIED</p>
 
       <div className="grid lg:grid-cols-3  lg:p-[6em] lg:pt-[4em]">
-        <div className='m-[1em] bg-green-950 text-white p-4 lg:h-[70vh]'>
+        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[70vh]'>
           <h2 className='font-bold text-2xl my-8'>watching Jesus do the extraordinary.</h2>
           <h6>
-          At the core of everything we do, our commitment to radical love sets us apart. We believe in embracing all individuals just as they are—with open arms and without judgement. This love motivates us to serve, support, and lift each other up in all walks of life.
+      Teaching / Preaching the undiluted word of God. Thereby winning souls in masses and conquering territories for Christ. 
           </h6>
         </div>
-        <div className='m-[1em] bg-green-950 text-white p-4 lg:h-[70vh]'>
+        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[70vh]'>
           <h2 className='font-bold text-2xl my-8'>Live Generously</h2>
           <h6>
-          Generosity is not just about giving; its about living. We make it our mission to live generously in every interaction, whether it’s with time, energy, or resources.
+        Going to secondary schools, higher institutions, orphanage homes, to place the burden of God upon the younger generation who will grow to become the disciples of Christ and good citizens of the kingdom and nations.
           </h6>
         </div>
-        <div className='m-[1em] bg-green-950 text-white p-4 lg:h-[70vh]'>
+        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[70vh]'>
           <h2 className='font-bold text-2xl my-8'>Watch the Extraordinary</h2>
           <h6>
-          When we come together in faith, extraordinary things happen. We are a testament to the power of Jesus and the incredible acts that follow when we put our trust in Him. Witnessing miracles, big and small, is part of our journey.
+         To show case Christ in His true nature though our lifestyle, our businesses, careers, miracles ,signs and wonders, etc.
           </h6>
         </div>
       </div>
     </section>
     {/* misson section  */}
-
-    {/* how it works  */}
-    {/* <section className="howItwork flex justify-between items-center my-[4em] mx-auto lg:px-16 w-full flex-col lg:flex-row" id='how'>
-      <div className="imgContain px-4 mt-12 lg:w-[100%]">
-        <h3 className='text-left py-1 text-green font-[500] text-[22px]' data-aos="fade-in" data-aos-delay="200">
-          Requests are made in a minimum of 12 hours advance notice. Although last minute emergency requests are accommodated (that will depend on the task).
-        </h3>
-        <h3 className='text-left py-2 text-green font-[500]' >
-         --- <span className='font-bold'>General Hours</span>  are from Mondays - Fridays 8am - 5pm; Saturdays 9am - 4pm. 
-        </h3>
-        <h3 className='text-left py-2 text-green font-[500]' >
-         --- <span className='font-bold'>
-         Premium hours  
-          </span> are after work hours (general hours), weekends, and holidays.
-        </h3>
-      </div>
-      <div className="textArea p-10 pb-16 bg-green mt-[4em] lg:relative right-[-4em] lg:ml-[2em]">
-        <h2 className='text-4xl font-[800] text-left uppercase'> <span className='text-yellowSlate'>How </span> <br /> it works</h2>
-        <ul className='text-start flex flex-col gap-3 py-3 lg:text-1xl text-[18px]'>
-          <li  data-aos="fade-up" data-aos-delay="200">1. Get the price estimate for the task or service.</li>
-          <li data-aos="fade-up" data-aos-delay="200">
-            2. Enter the location where you want the task or service performed.
-          </li>
-          <li  data-aos="fade-up" data-aos-delay="200">
-            3. Confirmation of the request (by contacting you to verify the details of your request and gather any additional information before presenting you with payment option).
-          </li>
-          <li  data-aos="fade-up" data-aos-delay="200">
-            4. Once payment has been made, Kelis Concierge will send out a personnel to execute the task or service.
-          </li>
-          <li>
-            5.  Our charges are based on hourly services or dependent on the task(s) to be executed. Requests are sent through our form link Request Form or either via Email, Phone call, SMS message, or WhatsApp.
-          </li>
-        </ul>
-        <code className='text-start '>
-          <b>NOTE:</b>
-          <span className='text-start '>Cancellation of a request must be made at least a minimum of 6-12 hours in advance of scheduled appointment, unless a penalty fee will be attached (A penalty of a 1-hour service charge).</span>
-        </code>
-      </div>
-    </section> */}
-    {/* how it works ending */}
 
     {/* testimonial section  */}
     <section className="service my-[5em] py-10 lg:px-14 px-4"  id='service'>
@@ -219,14 +180,14 @@ function App() {
       <Carousel {...settings}>
         {
           testimonies.map((content, i) => (
-            <div key={i} className="gridContent border bg-white rounded my-12 relative" >
+            <div key={i} className="gridContent border bg-green-900 rounded my-12 relative m-4" >
               <div className="cardImg lg:h-[280px] overflow-hidden h-[340px] w-full">
                 <img src={content.img} alt=""  className=" w-full h-full relative" data-aos="zoom-in" data-aos-delay="100" style={{
                   objectFit: 'cover',
                   objectPosition: 'top bottom'
                 }} />
               </div>
-              <div className='p-4 bg-green-950'>
+              <div className='p-4 bg-green-900'>
                 <h5 className='py-2 text-white text-[22px] 
                 font-[700]'>{content.title}</h5>
                 <p className='text-[18px] text-white' data-aos="fade-out"  data-aos-delay="70" > 
@@ -241,20 +202,20 @@ function App() {
     {/* testimonial section ending */}
 
 {/* Events Section */}
-<section id="events" className="events p-8 bg-white my-12 lg:px-16">
+<section id="events" className="events p-8 my-12 lg:px-16">
   <h2 className="text-3xl lg:text-4xl font-bold text-center text-green uppercase mb-6">
     Upcoming Events
   </h2>
   <div className="event-list grid lg:grid-cols-2 gap-12">
-    <div className="event-item bg-green-950 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+    <div className="event-item bg-green-900 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
       <h3 className="text-xl font-bold mb-4">Weekly Bible Study</h3>
       <p className="text-lg">Join us every Monday at 6:30 PM for an uplifting Bible study session.</p>
     </div>
-    <div className="event-item bg-green-950 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+    <div className="event-item bg-green-900 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
       <h3 className="text-xl font-bold mb-4">Prayer Meetings</h3>
       <p className="text-lg">Come together every Thursday at 7:00 PM for powerful prayer meetings.</p>
     </div>
-    <div className="event-item bg-green-950 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
+    <div className="event-item bg-green-900 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
       <h3 className="text-xl font-bold mb-4">Community Outreach</h3>
       <p className="text-lg">Be a part of our community outreach every last Saturday of the month.</p>
     </div>
@@ -262,19 +223,19 @@ function App() {
 </section>
 
 {/* Resources Section */}
-<section id="resources" className="resources p-8 bg-gray-100 my-12 lg:px-16">
+<section id="resources" className="resources p-8  my-12 lg:px-16">
   <h2 className="text-3xl lg:text-4xl font-bold text-center text-green uppercase mb-6">
     Useful Resources
   </h2>
   <div className="resource-list grid lg:grid-cols-3 gap-12">
-    <div className="resource-item bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+    <div className="resource-item bg-green-900 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
       <h3 className="text-xl font-bold mb-4">Bible Study Guide</h3>
       <p className="text-lg">Explore the depths of Gods word with our Bible study guide, available for download.</p>
       <button className="bg-green-950 text-white p-2 rounded mt-4">
         <a href="link-to-guide" className="text-white">Download Now</a>
       </button>
     </div>
-    <div className="resource-item bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+    <div className="resource-item bg-green-900 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
       <h3 className="text-xl font-bold mb-4">Christian Articles</h3>
       <p className="text-lg">Read a variety of insightful Christian articles on faith, life, and growth.</p>
       <button className="bg-green-950 text-white p-2 rounded mt-4">
@@ -293,7 +254,7 @@ function App() {
 
 
    {/* Contact Section */}
-<section id="contact" className="contact p-8 bg-white my-12 lg:px-16">
+<section id="contact" className="contact p-8 my-12 lg:px-16">
   <h2 className="text-3xl lg:text-4xl font-bold text-center text-green uppercase mb-6">
     Contact Us
   </h2>
