@@ -45,7 +45,7 @@ export const Navbar = () => {
                   
                   `${isActive ? 'text-white' : 'text-white'}
                   text-[16px] font-[600] font-manRope hover:text-activeColor transition-all
-                  ${item.name === 'Contact Us' ? 'bg-[#F7931E] text-white py-3 px-5 hover:text-white hover:bg-[#F7931E]' : ''}
+                  ${item.name === 'Contact Us' ? 'bg-green-800 text-white py-3 px-5 hover:text-white hover:bg-[#F7931E]' : ''}
                   `
                 }
               >

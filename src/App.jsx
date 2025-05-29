@@ -90,9 +90,9 @@ function App() {
                 backgroundImage: `linear-gradient( rgb(5, 46, 22 , 0.25),  rgb(5, 46, 22 , 1) ), url(${slide.img})`,
               }}
             >
-              <div className="lg:mt-6 mt-[5em] pr-4 mx-auto w-[60%]">
+              <div className="lg:mt-6 mt-[5em] pr-4 mx-auto lg:w-[70%]">
                 <div className=" text-center flex justify-center flex-col items-center">
-                  <h2 className="text-[20px] text-white lg:text-4xl font-[400] lg:font-[600] uppercase mb-5" data-aos="fade-up">
+                  <h2 className="text-[20px] text-white lg:text-5xl font-[400] lg:font-[600] uppercase mb-5" data-aos="fade-up">
                   Welcome to Green passion Believer Fellowship
                   </h2>
                   <h6
@@ -101,7 +101,7 @@ function App() {
                   >
                     Our Goal is to see Jesus REVEALED, GLORIFIED AND HIS BODY EDIFIED
                   </h6>
-                  <button className="text-white my-10 bg-[#F7931E]" data-aos="zoom-in">
+                  <button className="text-white my-10 bg-green-950 shadow border" data-aos="zoom-in">
                    <a href="https://chat.whatsapp.com/LnxXg88WjWmJB9dXfmu8nS"   target='_blank' className='text-white'>Join Our WhatApp</a>
                   </button>
                 </div>
@@ -124,20 +124,20 @@ function App() {
           <p className='text-left lg:py-3 mb-4 lg:px-6 py-4 font-[600] text-2xl text-white' data-aos="zoom-in">
         GREEN PASTURES  BELIEVERS FELLOWSHIP is a family. A family who come to God not just for what He has to offer but to Know Him Experientially. To love Him Unconditionally. This family is created to help build everyone in the knowledge of God for themselves by walking in the leading of the Holy Ghost
           </p>
-          <button className='lg:w-[30%] lg:ml-6 bg-[#F7931E] text-white'><a href="#mission" className='text-white'>Learn More</a></button>
+          <button className='lg:w-[30%] lg:ml-6 bg-green-900 text-white'><a href="#mission" className='text-white'>Learn More</a></button>
         </div>
       </div>
     </section>
     {/* about section ending */}
 
       {/* mission section  */}
-  <section className="mission lg:grid grid-cols-2 gap-1 mt-[1em] lg:pt-[3em] bg-green-950 py-10 items-center lg:mr-[4em] relative lg:pl-[4em] pb-10 lg:h-[55vh]" id='vision'>
+  <section className="mission lg:grid grid-cols-2 gap-1 mt-[1em] lg:pt-[3em]  bg-green-900 py-10 items-center lg:mr-[4em] relative lg:pl-[4em] lg:pb-[4em] h-auto" id='vision'>
       <div className='textArea flex justify-center lg:px-3 p-4 leading-7 flex-col pl-[40px] '>
         <h2 className='lg:text-4xl text-3xl lg:font-[800] font-[300] text-left lg:px-6 text-white uppercase '> Our Vision</h2>
         <p className='text-left py-6 lg:px-2 px-1 text-gray-300 lg:text-[20px] font-[500]' data-aos="fade-up" data-aos-delay="400">
         To helps raise men and women who will grow in stature and capacity to stand in the gap for their generation. To raise men and women who will not just grow spiritually but physically, financially and other sphere of life too numerous to mention. To help raise men and women who will not just be called Christians but they will be witnesses to God in all areas of their lives. Men and women that will carry the burden of God and deliver it safely no matter what.
         </p>
-        <button className='w-[40%] lg:ml-6 bg-[#F7931E]'><a href="#service" className='text-white font-[600]' data-aos="zoom-out">Learn More</a></button>
+        <button className='w-[40%] lg:ml-6 bg-green-950'><a href="#service" className='text-white font-[600]' data-aos="zoom-out">Learn More</a></button>
       </div>
       <div className="imgContainer w-[90%] order-[first] relative">
         <img src={Mission} className='w-full hidden lg:block absolute right-[-6.75em] top-[-9em]' alt="" />
@@ -148,22 +148,22 @@ function App() {
     {/* misson section  */}
     <section className='lg:h-[100vh] lg:mt-[11em] flex flex-col justify-center items-center mt-[3em]'>
       <h2 className='lg:text-4xl text-3xl lg:font-[800] font-[300] text-white text-left lg:px-6  uppercase my-5'>Our Mission</h2>
-      <p className='text-white'>Our Goal is to see Jesus REVEALED, GLORIFIED AND HIS BODY EDIFIED</p>
+      <p className='text-white text-center'>Our Goal is to see Jesus REVEALED, GLORIFIED AND HIS BODY EDIFIED</p>
 
       <div className="grid lg:grid-cols-3  lg:p-[6em] lg:pt-[4em]">
-        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[70vh]'>
+        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[50vh]'>
           <h2 className='font-bold text-2xl my-8'>watching Jesus do the extraordinary.</h2>
           <h6>
       Teaching / Preaching the undiluted word of God. Thereby winning souls in masses and conquering territories for Christ. 
           </h6>
         </div>
-        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[70vh]'>
+        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[50vh]'>
           <h2 className='font-bold text-2xl my-8'>Live Generously</h2>
           <h6>
         Going to secondary schools, higher institutions, orphanage homes, to place the burden of God upon the younger generation who will grow to become the disciples of Christ and good citizens of the kingdom and nations.
           </h6>
         </div>
-        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[70vh]'>
+        <div className='m-[1em] bg-green-900 text-white p-4 lg:h-[50vh]'>
           <h2 className='font-bold text-2xl my-8'>Watch the Extraordinary</h2>
           <h6>
          To show case Christ in His true nature though our lifestyle, our businesses, careers, miracles ,signs and wonders, etc.
@@ -174,36 +174,48 @@ function App() {
     {/* misson section  */}
 
     {/* testimonial section  */}
-    <section className="service my-[5em] py-10 lg:px-14 px-4"  id='service'>
-      <h2 className='lg:text-4xl text-3xl lg:font-[800] font-[300] lg:px-6 text-green text-center uppercase'> Testimonial</h2>
+{/* Testimonial Section */}
+<section className="my-[5em] py-10 lg:px-14 px-4 bg-green-900" id="service">
+  <h2 className="lg:text-4xl text-3xl font-bold text-white text-center uppercase mb-8">
+    Testimonial
+  </h2>
 
-      <Carousel {...settings}>
-        {
-          testimonies.map((content, i) => (
-            <div key={i} className="gridContent border bg-green-900 rounded my-12 relative m-4" >
-              <div className="cardImg lg:h-[280px] overflow-hidden h-[340px] w-full">
-                <img src={content.img} alt=""  className=" w-full h-full relative" data-aos="zoom-in" data-aos-delay="100" style={{
-                  objectFit: 'cover',
-                  objectPosition: 'top bottom'
-                }} />
-              </div>
-              <div className='p-4 bg-green-900'>
-                <h5 className='py-2 text-white text-[22px] 
-                font-[700]'>{content.title}</h5>
-                <p className='text-[18px] text-white' data-aos="fade-out"  data-aos-delay="70" > 
-                  {content.content}
-                </p>
-              </div>
-            </div>
-          ))
-        }
-      </Carousel>
-    </section>
+  <Carousel {...settings}>
+    {testimonies.map((content, i) => (
+      <div
+        key={i}
+        className="my-12 max-w-md p-[1em] "
+      >
+        <div className="h-[340px] lg:h-[280px] w-full overflow-hidden rounded-t-lg">
+          <img
+            src={content.img}
+            alt={`Testimonial ${i + 1}`}
+            className="w-full h-full object-cover"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          />
+        </div>
+        <div className="p-6 bg-green-800">
+          <h5 className="text-white text-xl font-bold mb-2">{content.title}</h5>
+          <p
+            className="text-white text-base"
+            data-aos="fade-up"
+            data-aos-delay="70"
+          >
+            {content.content}
+          </p>
+        </div>
+      </div>
+    ))}
+  </Carousel>
+</section>
+{/* End of Testimonial Section */}
+
     {/* testimonial section ending */}
 
 {/* Events Section */}
 <section id="events" className="events p-8 my-12 lg:px-16">
-  <h2 className="text-3xl lg:text-4xl font-bold text-center text-green uppercase mb-6">
+  <h2 className="text-3xl lg:text-4xl font-bold text-center text-white uppercase mb-6">
     Upcoming Events
   </h2>
   <div className="event-list grid lg:grid-cols-2 gap-12">
@@ -223,29 +235,29 @@ function App() {
 </section>
 
 {/* Resources Section */}
-<section id="resources" className="resources p-8  my-12 lg:px-16">
+<section id="resources" className="resources p-8  my-12 lg:px-16 bg-green-900 text-white h-[80vh] flex justify-center items-center flex-col gap-6"> 
   <h2 className="text-3xl lg:text-4xl font-bold text-center text-green uppercase mb-6">
     Useful Resources
   </h2>
   <div className="resource-list grid lg:grid-cols-3 gap-12">
-    <div className="resource-item bg-green-900 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
+    <div className="resource-item bg-green-950 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up">
       <h3 className="text-xl font-bold mb-4">Bible Study Guide</h3>
       <p className="text-lg">Explore the depths of Gods word with our Bible study guide, available for download.</p>
-      <button className="bg-green-950 text-white p-2 rounded mt-4">
+      <button className="bg-green-900 text-white p-2 rounded mt-4">
         <a href="link-to-guide" className="text-white">Download Now</a>
       </button>
     </div>
-    <div className="resource-item bg-green-900 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+    <div className="resource-item bg-green-950 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
       <h3 className="text-xl font-bold mb-4">Christian Articles</h3>
       <p className="text-lg">Read a variety of insightful Christian articles on faith, life, and growth.</p>
-      <button className="bg-green-950 text-white p-2 rounded mt-4">
+      <button className="bg-green-900 text-white p-2 rounded mt-4">
         <a href="link-to-articles" className="text-white">Read Articles</a>
       </button>
     </div>
-    <div className="resource-item bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
+    <div className="resource-item bg-green-950 text-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
       <h3 className="text-xl font-bold mb-4">Community Forum</h3>
       <p className="text-lg">Join the conversation in our Christian community forum for fellowship and support.</p>
-      <button className="bg-green-950 text-white p-2 rounded mt-4">
+      <button className="bg-green-900 text-white p-2 rounded mt-4">
         <a href="link-to-forum" className="text-white">Join Now</a>
       </button>
     </div>
@@ -255,26 +267,23 @@ function App() {
 
    {/* Contact Section */}
 <section id="contact" className="contact p-8 my-12 lg:px-16">
-  <h2 className="text-3xl lg:text-4xl font-bold text-center text-green uppercase mb-6">
+  <h2 className="text-3xl lg:text-4xl font-bold text-center text-white uppercase mb-6">
     Contact Us
   </h2>
-  <div className="contact-form bg-green-950 text-white p-8 rounded-lg shadow-lg" data-aos="fade-up">
-    <h3 className="text-xl font-bold mb-4">Get in Touch</h3>
-    <p className="text-lg mb-6"> We  love to hear from you. Fill out the form below to get in touch with us.</p>
+  <div className="contact-form bg-green-900 mx-auto text-white p-8 rounded-lg shadow-lg w-3/4" data-aos="fade-up">
+    <h3 className="text-xl font-bold mb-4 text-center">Get in Touch</h3>
+    <p className="text-lg mb-6 text-center"> We  love to hear from you. Fill out the form below to get in touch with us.</p>
     <form action="#" method="POST">
       <div className="form-group mb-4">
-        <label htmlFor="name" className="block text-lg">Your Name</label>
-        <input type="text" id="name" className="w-full p-3 bg-white text-gray-900 rounded" />
+        <input type="text" id="name" placeholder='Your Name' className="w-full p-3 bg-green-950 border text-white rounded" />
       </div>
       <div className="form-group mb-4">
-        <label htmlFor="email" className="block text-lg">Your Email</label>
-        <input type="email" id="email" className="w-full p-3 bg-white text-gray-900 rounded" />
+        <input type="email" id="email" placeholder='Enter Your Email' className="w-full p-3 bg-green-950 text-white border rounded" />
       </div>
       <div className="form-group mb-4">
-        <label htmlFor="message" className="block text-lg">Your Message</label>
-        <textarea id="message" className="w-full p-3 bg-white text-gray-900 rounded" rows="4"></textarea>
+        <textarea id="message" placeholder='Enter Your Message' className="w-full p-3 bg-green-950 border text-white rounded" rows="4"></textarea>
       </div>
-      <button type="submit" className="bg-green-950 text-white py-3 px-6 rounded-lg mt-4">
+      <button type="submit" className="bg-green-950 text-white py-3 px-6 rounded-lg mt-4 text-center">
         Submit
       </button>
     </form>
