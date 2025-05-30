@@ -9,9 +9,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Modal from './components/Modal';  // Import the modal component;
 import { HeroSlide } from './components/util';
-import Ab from '../src/assets/aboutUs.avif';
+import Ab from '../src/assets/abbb.jpg';
 
-import Mission from '../src/assets/Ourmission.avif'
+import Mission from '../src/assets/abb.png'
 
 import 'aos/dist/aos.css'; // AOS styles
 import AOS from 'aos'
@@ -76,7 +76,7 @@ function App() {
 
   return (
     <main className="bg-green-950">
-      <Navbar />
+<header>
 
     {/* hero section  */}
       <Slider {...heroSettings} className="heroSlide">
@@ -84,13 +84,16 @@ function App() {
           <div key={i} 
           >
             <section
-              className="hero lg:h-[210] h-screen text-white flex pt-[5em]  justify-center lg:pl-11 pl-4"
+              className="hero lg:h-[250] h-screen text-white lg:pl-11 pl-4"
               id="home"
               style={{
                 backgroundImage: `linear-gradient( rgb(5, 46, 22 , 0.25),  rgb(5, 46, 22 , 1) ), url(${slide.img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
               }}
             >
-              <div className="lg:mt-6 mt-[5em] pr-4 mx-auto lg:w-[70%]">
+        <Navbar />
+              <div className="lg:mt-6 mt-[6em] pr-4 mx-auto lg:w-[70%]">
                 <div className=" text-center flex justify-center flex-col items-center">
                   <h2 className="text-[20px] text-white lg:text-5xl font-[400] lg:font-[600] uppercase mb-5" data-aos="fade-up">
                   Welcome to Green passion Believer Fellowship
@@ -112,6 +115,7 @@ function App() {
       </Slider>
  
     {/* hero section ending */}
+</header>
 
     {/* about section  */}
     <section className="about lg:grid grid-cols-2 gap-16 lg:my-[6em] my-[2em] px-4 lg:h-[100vh]" id='about'>
@@ -121,7 +125,7 @@ function App() {
       <div className="textArea flex items-center justify-self-start pl-4">
         <div className='lg:px-1 lg:pr-3'>
           <h2 className='text-2xl lg:text-4xl font-[400] lg:font-[800] text-left lg:pl-6 py-4 text-white uppercase pt-[1em]' data-aos="fade-up">About GPBF</h2>
-          <p className='text-left lg:py-3 mb-4 lg:px-6 py-4 font-[600] text-2xl text-white' data-aos="zoom-in">
+          <p className='text-left lg:leading-10 lg:py-3 mb-4 lg:px-6 py-4 font-[500] text-1xl text-white' data-aos="zoom-in">
         GREEN PASTURES  BELIEVERS FELLOWSHIP is a family. A family who come to God not just for what He has to offer but to Know Him Experientially. To love Him Unconditionally. This family is created to help build everyone in the knowledge of God for themselves by walking in the leading of the Holy Ghost
           </p>
           <button className='lg:w-[30%] lg:ml-6 bg-green-900 text-white'><a href="#mission" className='text-white'>Learn More</a></button>
