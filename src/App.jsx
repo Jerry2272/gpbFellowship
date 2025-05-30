@@ -239,7 +239,7 @@ function App() {
 </section>
 
 {/* Resources Section */}
-<section id="resources" className="resources p-8  my-12 lg:px-16 bg-green-900 text-white h-[80vh] flex justify-center items-center flex-col gap-6"> 
+<section id="resources" className="resources p-8  my-12 lg:px-16 bg-green-900 text-white lg:h-[80vh] flex justify-center items-center flex-col gap-6"> 
   <h2 className="text-3xl lg:text-4xl font-bold text-center text-green uppercase mb-6">
     Useful Resources
   </h2>
@@ -274,7 +274,7 @@ function App() {
   <h2 className="text-3xl lg:text-4xl font-bold text-center text-white uppercase mb-6">
     Contact Us
   </h2>
-  <div className="contact-form bg-green-900 mx-auto text-white p-8 rounded-lg shadow-lg w-3/4" data-aos="fade-up">
+  <div className="contact-form bg-green-900 mx-auto text-white p-8 rounded-lg shadow-lg lg:w-3/4" data-aos="fade-up">
     <h3 className="text-xl font-bold mb-4 text-center">Get in Touch</h3>
     <p className="text-lg mb-6 text-center"> We  love to hear from you. Fill out the form below to get in touch with us.</p>
     <form action="#" method="POST">
