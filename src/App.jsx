@@ -84,7 +84,7 @@ function App() {
           <div key={i} 
           >
             <section
-              className="hero lg:h-[250] h-screen text-white lg:pl-11 pl-4"
+              className="hero lg:h-[250] h-[120vh] text-white lg:pl-11 pl-4"
               id="home"
               style={{
                 backgroundImage: `linear-gradient( rgb(5, 46, 22 , 0.25),  rgb(5, 46, 22 , 1) ), url(${slide.img})`,
